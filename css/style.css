@@ -1,0 +1,142 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #7AB730;
+  --secondary: #f4faec;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #FFFFFF;
+  --dark: #212121;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Poppins", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+{
+  font-family: var(--font-family-sans-serif);
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    background-image: url('../images/fondo.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Estilos para el contenedor de la imagen y el texto */
+.imagen-con-texto {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    margin-bottom: 20px; /* Agrega un espacio inferior para separar del contenido siguiente (ajusta según sea necesario) */
+}
+
+/* Estilos para la imagen */
+.img-pequena {
+    max-width: 250px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Estilos para el texto */
+.texto-al-lado {
+    margin-top: 0; /* Ajusta el margen superior a 0 */
+}
+
+/* Estilos generales del botón flotante */
+#floating-button {
+  position: fixed;
+  bottom: 20px; /* Distancia desde la parte inferior de la pantalla */
+  right: 20px; /* Distancia desde la parte derecha de la pantalla */
+  display: none; /* Oculta el botón por defecto */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none;
+  border-radius: 50%; /* Hace que el botón sea redondo */
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Estilos para dispositivos móviles utilizando una media query */
+@media (max-width: 767px) {
+  /* Muestra el botón flotante solo en dispositivos móviles */
+  #floating-button.mobile-only {
+    display: block;
+  }
+}
+
+/* Estilos para el contenedor cuadrado */
+.mobile-image-container {
+  width: 100%; /* Ancho completo del contenedor en dispositivos móviles */
+  padding-bottom: 100%; /* Hace que el contenedor tenga una relación de aspecto 1:1 (cuadrada) */
+  background-image: url('images/video.png'); /* Ruta de la imagen */
+  background-position: center; /* Centra la imagen en el contenedor */
+}
+
+#floating-button {
+  /* Otros estilos... */
+  z-index: 1000; /* Ajusta el valor según sea necesario */
+}
+
+/* Estilos para el menú flotante */
+.floating-menu {
+  display: none; /* Oculta el menú por defecto */
+  position: fixed;
+  top: 50%; /* Coloca el menú en el centro verticalmente */
+  left: 50%; /* Coloca el menú en el centro horizontalmente */
+  transform: translate(-50%, -50%); /* Centra el menú en la pantalla */
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1001; /* Asegura que esté encima del botón flotante */
+}
+
+.floating-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.floating-menu li {
+  margin-bottom: 10px;
+}
+
+.floating-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
