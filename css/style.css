@@ -1,128 +1,94 @@
+/* Definición de variables */
 :root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #7AB730;
-  --secondary: #f4faec;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #FFFFFF;
-  --dark: #212121;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Poppins", sans-serif;
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --primary-color: #007bff;
+  --secondary-color: #f4faec;
+  --success-color: #28a745;
+  --info-color: #17a2b8;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --light-color: #ffffff;
+  --dark-color: #212121;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-
-{
-  font-family: var(--font-family-sans-serif);
+/* Estilos generales */
+body {
+  background-image: url('../images/fondo.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-body {
-    background-image: url('../images/fondo.png');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+/* Estilos para la barra de navegación superior */
+.container-fluid.bg-light {
+  background-color: var(--light-color);
+  padding-top: 10px;
 }
 
-/* Estilos para el contenedor de la imagen y el texto */
-.imagen-con-texto {
-    display: flex;
-    align-items: center; /* Centra verticalmente el contenido */
-    margin-bottom: 20px; /* Agrega un espacio inferior para separar del contenido siguiente (ajusta según sea necesario) */
+/* Estilos para el logotipo en la barra de navegación */
+.navbar img {
+  max-width: 100%;
+  height: auto;
 }
 
-/* Estilos para la imagen */
-.img-pequena {
-    max-width: 250px;
-    height: auto;
-    margin-right: 20px;
+/* Estilos para la sección con la imagen principal */
+#responsive-image-container {
+  text-align: center;
+  margin-top: -48px;
 }
 
-/* Estilos para el texto */
-.texto-al-lado {
-    margin-top: 0; /* Ajusta el margen superior a 0 */
+#responsive-image-container img {
+  max-width: 100%;
+  height: auto;
 }
 
-/* Estilos generales del botón flotante */
+/* Estilos para el carrusel de pestañas */
+#pestanas-carousel {
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Estilos para el contenido de las pestañas */
+#pestanas-carousel .carousel-item {
+  text-align: justify;
+  padding: 20px;
+}
+
+/* Estilos para el botón flotante en dispositivos móviles */
 #floating-button {
   position: fixed;
-  bottom: 20px; /* Distancia desde la parte inferior de la pantalla */
-  right: 20px; /* Distancia desde la parte derecha de la pantalla */
-  display: none; /* Oculta el botón por defecto */
-  background-color: #007bff; /* Color de fondo del botón */
-  color: white; /* Color del texto del botón */
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: var(--primary-color);
+  color: white;
   border: none;
-  border-radius: 50%; /* Hace que el botón sea redondo */
+  border-radius: 50%;
   width: 60px;
   height: 60px;
   font-size: 24px;
   text-align: center;
   cursor: pointer;
-}
-
-/* Estilos para dispositivos móviles utilizando una media query */
-@media (max-width: 767px) {
-  /* Muestra el botón flotante solo en dispositivos móviles */
-  #floating-button.mobile-only {
-    display: block;
-  }
-}
-
-/* Estilos para el contenedor cuadrado */
-.mobile-image-container {
-  width: 100%; /* Ancho completo del contenedor en dispositivos móviles */
-  padding-bottom: 100%; /* Hace que el contenedor tenga una relación de aspecto 1:1 (cuadrada) */
-  background-image: url('images/video.png'); /* Ruta de la imagen */
-  background-position: center; /* Centra la imagen en el contenedor */
-}
-
-#floating-button {
-  /* Otros estilos... */
-  z-index: 1000; /* Ajusta el valor según sea necesario */
+  z-index: 1000;
 }
 
 /* Estilos para el menú flotante */
 .floating-menu {
-  display: none; /* Oculta el menú por defecto */
+  display: none;
   position: fixed;
-  top: 50%; /* Coloca el menú en el centro verticalmente */
-  left: 50%; /* Coloca el menú en el centro horizontalmente */
-  transform: translate(-50%, -50%); /* Centra el menú en la pantalla */
-  background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 90%;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  z-index: 1001; /* Asegura que esté encima del botón flotante */
+  z-index: 1001;
 }
 
 .floating-menu ul {
@@ -140,3 +106,64 @@ body {
   font-weight: bold;
 }
 
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  /* Estilos para la barra de navegación en dispositivos móviles */
+  .navbar {
+    padding: 15px;
+  }
+
+  /* Estilos para la sección con la imagen principal en dispositivos móviles */
+  #responsive-image-container {
+    margin-top: -20px;
+  }
+
+  /* Estilos para el carrusel de pestañas en dispositivos móviles */
+  #pestanas-carousel {
+    max-width: 100%;
+  }
+
+  /* Estilos para el contenido de las pestañas en dispositivos móviles */
+  #pestanas-carousel .carousel-item {
+    padding: 10px;
+  }
+
+  /* Estilos para el botón flotante en dispositivos móviles */
+  #floating-button.mobile-only {
+    display: block;
+  }
+}
+
+/* Estilos generales del contenedor de imagen y texto */
+.imagen-con-texto {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    margin-bottom: 20px; /* Espacio inferior para separar del contenido siguiente */
+}
+
+/* Estilos para la imagen */
+.img-pequena {
+    max-width: 250px;
+    height: auto;
+    margin-right: 20px; /* Espacio entre la imagen y el texto en pantallas grandes */
+    margin-bottom: 10px; /* Espacio inferior para separar la imagen del texto en móvil */
+}
+
+/* Estilos para el texto */
+.texto-al-lado {
+    margin-top: 0; /* Ajusta el margen superior a 0 */
+}
+
+/* Media Query para pantallas con un ancho máximo de 768px (tamaño de pantalla para móvil) */
+@media screen and (max-width: 768px) {
+    /* Cambia la dirección de disposición a column para la versión móvil */
+    .imagen-con-texto {
+        flex-direction: column; /* Coloca la imagen arriba del texto en la versión móvil */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    /* Elimina el margen derecho de la imagen en la versión móvil */
+    .img-pequena {
+        margin-right: 0;
+    }
+}
