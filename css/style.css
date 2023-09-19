@@ -132,6 +132,16 @@ body {
   #floating-button.mobile-only {
     display: block;
   }
+    /* Cambia la dirección de disposición a column para la versión móvil */
+    .imagen-con-texto {
+        flex-direction: column; /* Coloca la imagen arriba del texto en la versión móvil */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    /* Elimina el margen derecho de la imagen en la versión móvil */
+    .img-pequena {
+        margin-right: 0;
+    }
 }
 
 /* Estilos generales del contenedor de imagen y texto */
@@ -154,16 +164,4 @@ body {
     margin-top: 0; /* Ajusta el margen superior a 0 */
 }
 
-/* Media Query para pantallas con un ancho máximo de 768px (tamaño de pantalla para móvil) */
-@media screen and (max-width: 990px) {
-    /* Cambia la dirección de disposición a column para la versión móvil */
-    .imagen-con-texto {
-        flex-direction: column; /* Coloca la imagen arriba del texto en la versión móvil */
-        align-items: center; /* Centra los elementos horizontalmente */
-    }
 
-    /* Elimina el margen derecho de la imagen en la versión móvil */
-    .img-pequena {
-        margin-right: 0;
-    }
-}
