@@ -80,6 +80,7 @@
         <ol class="carousel-indicators">
             <li data-target="#pestanas-carousel" data-slide-to="0" class="active"></li>
             <li data-target="#pestanas-carousel" data-slide-to="1"></li>
+            <li data-target="#pestanas-carousel" data-slide-to="2"></li>
         </ol>
 
         <div class="carousel-inner">
@@ -126,6 +127,45 @@
                 </section>
             </div>
 
+            <div class="carousel-item">
+                <section id="historia-3" class="container mt-4" style="max-width: 80%; height: auto;">
+                    <div class="row">
+                            <h2>Cofundadores</h2>
+                        <div class="imagen-con-texto">
+                            <img src="images/BlancaAubretondeLambert.png" alt="imagen" class="img-pequena">
+                            <br>
+                            <div class="texto-al-lado">
+                                <p>La Hermana Blanca Aubreton de Lambert nació el 9 de diciembre de 1867 en París, Francia, en una familia humilde. Desde su infancia, tuvo que trabajar para ayudar a mantener a su familia. Más tarde, se casó con Hipólito Lambert y se mudó al sur de Francia, donde conoció a un soldado llamado Jacob, quien compartió con ella su conocimiento espiritual, que ella asimiló rápidamente.</p>
+                            </div>
+                        </div>
+                            <div class="contenedor-texto">
+                                <p>El matrimonio Lambert emigró a Buenos Aires, Argentina, donde pasaron muchos años trabajando arduamente para mantener su hogar. Aunque la actividad espiritual de la Hermana Blanca tuvo que ser postergada debido a sus responsabilidades, nunca olvidó su misión espiritual. En 1915, conoció al hermano Eugenio Portal, y juntos comenzaron la acción para llevar a cabo "La Idea Nueva" en la Escuela Científica Basilio. A pesar de enfrentar problemas de salud entre 1918 y 1919, ella siguió trabajando con determinación para cumplir su promesa. La Hermana Blanca falleció el 25 de junio de 1920 en Buenos Aires, Argentina. Cuando la Escuela Nº 7 se inauguró en Valentín Alsina, provincia de Buenos Aires, el 21 de septiembre de 1947, fue nombrada como la primera Guía Espiritual de esa Escuela, brindando apoyo espiritual y amor a sus hermanos y participando en la Redención Humana.</p>
+                                <br>
+                            </div>
+                        </div>
+
+                        <div class="imagen-con-texto">
+                            <img src="images/BernardoEugenioPortal.png" alt="imagen" class="img-pequena">
+                            <br>
+                            <div class="texto-al-lado">
+                                <p>El Hermano Eugenio Portal nació en Francia en 1867 y más tarde se naturalizó como ciudadano argentino. Su padre fue Pedro Basilio Portal, un hombre culto que obtuvo el título de Escribano Público Nacional. Estuvo casado con Valentina A. de Portal y tuvo tres hijos: María Antonieta, Leopoldo y Francisco.</p>
+                            </div>
+                        </div>
+                        <div class="contenedor-texto">
+                         <p>Eugenio Portal tenía inquietudes éticas y espirituales que aplicó a su profesión. En su búsqueda espiritual, se encontró con la Hermana Blanca Aubreton de Lambert. De estas reuniones surgió la planificación para una tarea encomendada por Dios y orientada por Jesús de Nazareth: la fundación de una Escuela cuyo propósito sería guiar a la redención de todos los seres.</p>
+                                <br>
+                                <p>El 1 de noviembre de 1917, después de un arduo trabajo, fundaron la Escuela Científica Basilio con el lema "Hacia Dios con la Verdad y la Justicia". La misión de Eugenio Portal no se limitó a lo espiritual, ya que también se enfocó en los aspectos legales necesarios para obtener el reconocimiento legal de la Institución. Se dedicó por completo a preparar el Estatuto y Reglamento que fue aprobado por el Gobierno Nacional en 1925.</p>
+                                <br>
+                                <p>A pesar de enfrentar problemas de salud en 1926, Eugenio Portal continuó su actividad. Falleció el 3 de julio de 1927 en Buenos Aires, Argentina, a la edad de 60 años. Desde entonces, ha brindado sus vibraciones de amor y energía a sus hermanos para que continúen su proceso evolutivo y participen en la Redención Humana.</p>
+                                <br>
+                                <p>Cuando la Escuela Nº 6 se inauguró en Parque Rodó, Montevideo, República Oriental del Uruguay, el 11 de mayo de 1947, Eugenio Portal fue designado como el primer Guía Espiritual en esa Escuela.</p>
+                            </div>
+
+
+
+                </section>
+            </div>
+
 
 
         </div>
@@ -141,12 +181,20 @@
     </div>
 
 <!-- Agrega un botón flotante en el HTML -->
-<button id="floating-button" class="mobile-only"></button>
+
+<!-- Botón flotante con un ícono predeterminado -->
+<button id="floating-button" class="mobile-only" style="background-color: rgba(0, 123, 255, 0.3)">
+  <i id="floating-icon" class="fas fa-envelope"></i>
+</button>
+
+
 
 <div id="floating-menu" class="floating-menu">
   <ul>
+    <h5 style="color: #007bff;">Contactos</h5>
     <li><a href="mailto:comdirectiva@basilio.org.ar">Enviar un correo</a></li>
     <li><a href="tel:+11234567890" target="_blank">Llamar</a></li>
+    <h5 style="color: #007bff;">Redes</h5>
     <li><a href="https://www.facebook.com/profile.php?id=100063712803193">Abrir Facebook</a></li>
     <li><a href="https://www.instagram.com/escuelacientificabasilio/">Abrir Instagram</a></li>
     <li><a href="https://www.youtube.com/@escuelacientificabasilioof9834">Abrir YouTube</a></li>
@@ -205,6 +253,40 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+// Definir una lista de íconos y enlaces correspondientes
+const icons = [
+  { iconClass: "fas fa-envelope", link: "mailto:comdirectiva@basilio.org.ar" },
+  { iconClass: "fas fa-phone-alt", link: "tel:+11234567890" },
+  { iconClass: "fab fa-facebook-f", link: "https://www.facebook.com/profile.php?id=100063712803193" },
+  { iconClass: "fab fa-instagram", link: "https://www.instagram.com/escuelacientificabasilio/" },
+  { iconClass: "fab fa-youtube", link: "https://www.youtube.com/@escuelacientificabasilioof9834" }
+];
+
+// Obtener referencias al botón y al ícono
+const floatingButton = document.getElementById("floating-button");
+const floatingIcon = document.getElementById("floating-icon");
+
+// Contador para rastrear el ícono actual
+let currentIconIndex = 0;
+
+// Función para cambiar el ícono automáticamente
+function changeIconAutomatically() {
+  // Obtener el siguiente ícono y enlace en la lista
+  const nextIcon = icons[currentIconIndex];
+  
+  // Cambiar el ícono y el enlace en el botón
+  floatingIcon.className = nextIcon.iconClass;
+  floatingButton.setAttribute("href", nextIcon.link);
+  
+  // Incrementar el contador o volver al principio si llegamos al final
+  currentIconIndex = (currentIconIndex + 1) % icons.length;
+}
+
+// Cambiar el ícono automáticamente cada 5 segundos (5000 milisegundos)
+setInterval(changeIconAutomatically, 5000);
+</script>
 
 </body>
 
