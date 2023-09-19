@@ -107,7 +107,7 @@ body {
 }
 
 /* Estilos para dispositivos móviles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
   /* Estilos para la barra de navegación en dispositivos móviles */
   .navbar {
     padding: 15px;
@@ -155,7 +155,7 @@ body {
 }
 
 /* Media Query para pantallas con un ancho máximo de 768px (tamaño de pantalla para móvil) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
     /* Cambia la dirección de disposición a column para la versión móvil */
     .imagen-con-texto {
         flex-direction: column; /* Coloca la imagen arriba del texto en la versión móvil */
