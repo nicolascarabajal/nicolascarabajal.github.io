@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="imagenes/favicon.png" type="image/png">
+    <title>Asociación Escuela Científica Basilio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <!-- carga  -->
+  <div class="carga">
+    <img class="carga2" src="imagenes/carga.gif" alt="#"/>
+  </div>
+  <!-- boton del menu flotante -->
+  <button type="button" class="boton-menu" onclick="toggleMenu()">Menu</button>
+  <!-- menu lateral -->
+  <div class="menu2" id="menu">
+      <h2>Menu</h2>
+      <ul>
+        <li><a data-translate="1" href="#">Cuenta</a></li>
+        <li><a data-translate="2" href="#">Cuotas</a></li>
+        <li><a data-translate="3" href="#">Tienda</a></li>
+        <li><a data-translate="4" href="#">Boletin</a></li>
+        <li><a data-translate="5" href="#">Donaciones</a></li>
+        <li><a data-translate="6" href="#">Publicaciones</a></li>
+        <li><a data-translate="7" href="#">Cursos virtules</a></li>
+        <li><a data-translate="8" href="#">Ayuda Humanitaria</a></li>
+        <li><a data-translate="9" href="#">Periódico «LA IDEA NUEVA»</a></li>
+      </ul>
+  </div>
+  <!-- titulo -->
+  <div id="container">
+    <a>
+      <img src="imagenes/titulo.png" alt="#">
+    </a>
+  </div>
+  <!-- banner -->
+  <div class="banner">
+    <video id="miVideo" autoplay loop muted playsinline class="video" preload="auto">
+      <source src="imagenes/banner.mp4" type="video/mp4">
+    </video> 
+  </div>
+  <!-- carrusel -->
+  <div class="titulo-2">
+    <br>
+    <h3>Nuestra Historia</h3>
+    <div class="contenedor-carrusel">
+      <div class="envoltura-carrusel">
+        <!-- Tarjeta 1 -->
+        <div class="item-carrusel">
+          <div class="tarjeta">
+            <img src="imagenes/a1.png" alt="Imagen 1">
+            <h2>¿Que es la escuela?</h2>
+            <p class="texto">La Escuela Científica Basilio, una venerable institución con raíces profundamente arraigadas en la espiritualidad y la búsqueda de la redención humana, se erige como un faro de conocimiento trascendental. Su misión, desde tiempos inmemoriales, ha sido la de transmitir la enseñanza de la Redención Espiritual que Jesús de Nazareth trajo consigo</p>
+            <a href="articulo1.html" target="_blank" class="enlaces">Seguir Leyendo</a>
+          </div>
+        </div>
+        <!-- Tarjeta 2 -->
+        <div class="item-carrusel">
+          <div class="tarjeta">
+            <img src="imagenes/a2.png" alt="Imagen 2">
+            <h2>Origen, Nombre y Fundación</h2>
+            <p class="texto">La Escuela Científica Basilio, cuyo origen y nombre se remontan a la influencia de Pedro Basilio Portal en la formación de su hijo, el cofundador Eugenio Portal, se erige como un faro de conocimiento espiritual</p>
+            <a href="articulo2.html" target="_blank" class="enlaces">Seguir Leyendo</a>
+         </div>
+        </div>
+        <!-- Tarjeta 3 -->
+        <div class="item-carrusel">
+          <div class="tarjeta">
+            <img src="imagenes/a3.png" alt="Imagen 3">
+            <h2>Guía Espiritual de la Institución</h2>
+            <p class="texto">La figura trascendental de Pedro Basilio Portal se erige como un faro en la historia de la Institución. Nacido en Miramont de Comminges, en la comuna cercana a Saint Gaudens en Alta Gerona, Francia</p>
+            <a href="articulo3.html" target="_blank" class="enlaces">Seguir Leyendo</a>
+          </div>
+        </div>
+        <!-- Tarjeta 4 -->
+        <div class="item-carrusel">
+          <div class="tarjeta">
+            <img src="imagenes/a4.png" alt="Imagen 4">
+            <h2>Cofundadores</h2>
+            <p class="texto">En el siglo XIX, en el corazón de París, nació Blanca Aubreton de Lambert el 9 de diciembre de 1867. Aunque provenía de un hogar humilde, su vida estaba destinada a tomar un giro excepcional. Desde su infancia, Blanca se vio obligada a trabajar incansablemente para contribuir a la subsistencia de su familia</p>
+            <a href="articulo4.html" target="_blank" class="enlaces">Seguir Leyendo</a>
+          </div>
+        </div>
+        <!-- Tarjeta 5 -->
+        <div class="item-carrusel">
+          <div class="tarjeta">
+            <img src="imagenes/a5.png" alt="Imagen 5">
+            <h2>La Cruz y el Retrato de Jesús</h2>
+            <p class="texto">La Escuela Científica Basilio, en su afán de transmitir una profunda Enseñanza Espiritual de la Redención, se encuentra arraigada en la veneración de un símbolo primordial: la Cruz con una corona de espinas</p>
+            <a href="articulo5.html" target="_blank" class="enlaces">Seguir Leyendo</a>
+          </div>
+        </div>
+        <!-- Tarjeta 6 -->
+        <div class="item-carrusel">
+          <div class="tarjeta">
+            <img src="imagenes/a6.png" alt="Imagen 6">
+            <h2>Actividades de la Escuela Científica Basilio</h2>
+            <p class="texto">La Escuela, en su noble Misión, abarca una serie de actividades multidimensionales que se entrelazan en su propósito fundamental. Entre las principales facetas que conforman su quehacer se encuentran:</p>
+            <a href="articulo6.html" target="_blank" class="enlaces">Seguir Leyendo</a>
+          </div>
+        </div>
+      </div>
+      <div class="controles-carrusel">
+        <button type="button" class="boton-carrusel" onclick="anteriorTarjeta()">❮</button>
+        <button type="button" class="boton-carrusel" onclick="siguienteTarjeta()">❯</button>
+      </div>
+    </div>
+  </div>
+  <!-- ubicacion -->
+  <a href="https://maps.app.goo.gl/JwgmjFCavN5wS6DS9" target="_blank">
+    <img  class="ubicacion"  src="imagenes/mapa.png" alt="Mapa de Google Maps">
+  </a>
+  <!-- escuelas -->
+  <div class="escuelas">
+    <button type="button" onclick="abrirVentana()">Buscar Escuelas cercanas</button>
+  </div>
+  <div id="miVentana" class="ventana-flotante">
+      <div class="contenido">
+          <span class="cerrar" onclick="cerrarVentana()">&times;</span>
+          <iframe id="miIframe" src="" frameborder="0" allowfullscreen></iframe>
+      </div>
+  </div>
+  <!-- maximas autoridades -->
+  <div>
+    <h3 class="Maximas-autoridades">Maximas autoridades</h3>
+    <div class="Maximas">
+      <div>
+          <img src="imagenes/1.png" alt="#">
+          <h2>Lic.Julio Iglesias Palermo</h2>
+          <p>Discípulo Espiritual Coordinador General</p>
+      </div>
+      <div>
+        <img src="imagenes/1.png" alt="#">
+        <h2>Dr.Roberto Carlos Mazulla</h2>
+        <p>Presidente de Comisión Directiva</p>
+    </div>
+    </div>
+  </div>
+  <!-- contactos -->
+  <div class="contactos-redes">
+    <div class="contactos-redes-2">
+      <div class="contactos-redes-3">
+        <h3>Contactos</h3>
+        <p>Email: comdirectiva@basilio.org.ar</p>
+        <p>Tel: 011- 5281-0550</p>
+      </div>
+      <!-- Redes -->
+      <div class="contactos-redes-3">
+        <h3>Redes</h3>
+        <a href="https://www.facebook.com/people/Escuela-Cient%C3%ADfica-Basilio-P%C3%A1gina-Oficial-Mundial/100063712803193/" target="_blank">
+          <img src="imagenes/facebook.png" alt="#">
+        </a>
+        <a href="https://www.youtube.com/channel/UCpCYtW1lCYaJJ8bbpVbislA" target="_blank">
+          <img src="imagenes/youtube.png" alt="#">
+        </a>
+        <a href="https://www.instagram.com/escuelacientificabasilio/" target="_blank">
+          <img src="imagenes/instagram.png" alt="#">
+        </a>
+        <div id="redes">
+        </div>
+      </div>
+      <!-- Otras paginas oficiales -->
+      <div class="contactos-redes-3">
+        <h3>Otras paginas oficiales</h3>
+        <a href="https://basilio.org.uy/" target="_blank">
+          <p>basilio.org.uy/</p>
+        </a>
+        <a href="https://www.basiliousa.com/" target="_blank">
+          <p>www.basiliousa.com/</p>
+        </a>
+        <a href="https://www.basilioparaguayoficial.org/" target="_blank">
+          <p>www.basilioparaguayoficial.org/</p>
+        </a>
+      </div>
+    </div>
+     <!-- final -->
+    <div class="final">
+      <div class="final-2">
+        <p>© 2023 Todos los derechos reservados. Asociación Escuela Científica Basilio Culto a Dios- Confesión Religiosa de los Discípulos de Jesús. </p>
+      </div>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
